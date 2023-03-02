@@ -1,6 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-// Set the target to static
     app: {
         baseURL: '/test-gamedev/'
     },
@@ -9,7 +8,7 @@ export default defineNuxtConfig({
         css: {
             preprocessorOptions: {
                 scss: {
-                    additionalData: '@import "@/assets/styles/variables.scss";@import "@/assets/styles/mixins.scss";@import "@/assets/styles/typography.scss";',
+                    additionalData: '@import "~/assets/styles/variables.scss";@import "~/assets/styles/mixins.scss";@import "~/assets/styles/typography.scss";',
                 },
             },
         },
