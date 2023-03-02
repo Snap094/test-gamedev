@@ -1,10 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    mode: 'static',
-    router: {
-        base: '/test-gamedev/'
+// Set the target to static
+    app: {
+        baseURL: '/test-gamedev/'
     },
-    css: ["@/assets/styles/style.scss"],
+    css: ["~/assets/styles/style.scss"],
     vite: {
         css: {
             preprocessorOptions: {
