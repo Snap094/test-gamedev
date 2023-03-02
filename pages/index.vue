@@ -48,7 +48,6 @@
 </template>
 
 <script setup>
-
 import BenefitsItem from "../components/BenefitsItem";
 </script>
 
