@@ -23,19 +23,19 @@
           <h2 class="typography_head4 typography_text-center">Тим, хто нагоняє Траф</h2>
           <div class="main__benefits-items">
             <benefits-item
-                :img="'/_nuxt/assets/images/megaphone.svg'"
+                :img="'/test-gamedev/_nuxt/assets/images/megaphone.svg'"
                 :alt="'megaphone'"
                 :title="'Круті акції, призи та прибуткова бонусна програма'"
                 :desc="'Ми постійно працюємо над тим, щоб вам було цікаво та вигідно!'"
             />
             <benefits-item
-                :img="'/_nuxt/assets/images/smile.svg'"
+                :img="'/test-gamedev/_nuxt/assets/images/smile.svg'"
                 :alt="'smile'"
                 :title="'Особлива підтримка для кожного 24/7'"
                 :desc="'У вас буде свій персональний менеджер'"
             />
             <benefits-item
-                :img="'/_nuxt/assets/images/chart-bar.svg'"
+                :img="'/test-gamedev/_nuxt/assets/images/chart-bar.svg'"
                 :alt="'chart-bar'"
                 :title="'Детальна<br>статистика'"
                 :desc="'Миттєве оновлення, зрозуміла система відображення статистики'"
