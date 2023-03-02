@@ -1,7 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    app: {
-        baseURL: '/test-gamedev/'
+    mode: 'static',
+    router: {
+        base: '/test-gamedev/'
     },
     css: ["@/assets/styles/style.scss"],
     vite: {
