@@ -25,10 +25,11 @@ body {
 }
 
 .site-content {
-  padding: 65px 0;
+  padding: 24px 0;
 
-  @include media-sm {
-    padding: 24px 0;
+  @include media-lg {
+    padding: 65px 0;
+
   }
 }
 
@@ -36,14 +37,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.center_mob {
-  @include media-sm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 }
 
 .mb-32 {
@@ -68,19 +61,19 @@ body {
   margin: 0 auto;
   height: 100%;
   width: 100%;
-  max-width: 1200px;
+  max-width: 100%;
   transition: .3s linear;
-
-  @include media-lg {
-    max-width: 1024px;
-    padding: 0 15px;
-  }
+  padding: 0 10px;
 
   @include media-md {
     max-width: 768px;
   }
 
-  @include media-sm {
-    max-width: 100%;
+  @include media-lg {
+    max-width: 1024px;
+  }
+
+  @include media-xl {
+    max-width: 1200px;
   }
 }

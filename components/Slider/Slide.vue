@@ -9,10 +9,6 @@
   </div>
 </template>
 
-<script setup>
-
-</script>
-
 <style lang="scss" scoped>
   .slide {
     display: flex;

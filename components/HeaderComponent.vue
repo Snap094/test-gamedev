@@ -5,26 +5,21 @@
         <img class="header__logo-img" src="~/assets/images/logo.png" alt="logo">
       </div>
       <div class="header__auth">
-        <button-component @click="isOpenLogin = true" class="button_small button_dark">Вхід</button-component>
-        <button-component @click="isOpenRegister = true" class="button_primary button_small">Реєстрація</button-component>
-        <ModalPopUp :open="isOpenLogin" @close="isOpenLogin = !isOpenLogin">
-          <FormLogin />
-        </ModalPopUp>
-        <ModalPopUp :open="isOpenRegister" @close="isOpenRegister = !isOpenRegister">
-          <register-wrapper />
-        </ModalPopUp>
+        <UiButton @click="isOpenLogin = true" class="button_small button_dark">Вхід</UiButton>
+        <UiButton @click="isOpenRegister = true" class="button_primary button_small">Реєстрація</UiButton>
+        <UiModal :open="isOpenLogin" @close="isOpenLogin = !isOpenLogin">
+          <FormsLogin/>
+        </UiModal>
+        <UiModal :open="isOpenRegister" @close="isOpenRegister = !isOpenRegister">
+          <FormsRegisterWrapper />
+        </UiModal>
       </div>
     </div>
   </header>
 </template>
 
 <script setup>
-import ButtonComponent from "./ui-components/ButtonComponent";
-import ModalPopUp from "./ui-components/ModalPopUp";
 import {ref} from "vue";
-import FormLogin from "./FormLogin"
-import FormRegister from "./FormRegister";
-import RegisterWrapper from "./RegisterWrapper";
 
 const isOpenLogin = ref(false);
 const isOpenRegister = ref(false);
@@ -40,11 +35,11 @@ const isOpenRegister = ref(false);
   border-bottom: 1px solid $cl-gray-700;
 
   &__logo {
-    width: 222.2px;
-    height: 45px;
-    position: relative;
+    width: 148.13px;
+    height: 30px;
+    position: initial;
+    transform: initial;
     left: 50%;
-    transform: translateX(-50%);
 
     &-img {
       width: 100%;
@@ -52,11 +47,11 @@ const isOpenRegister = ref(false);
       object-fit: contain;
     }
 
-    @include media-sm {
-      width: 148.13px;
-      height: 30px;
-      position: initial;
-      transform: initial;
+    @include media-lg {
+      width: 222.2px;
+      height: 45px;
+      position: relative;
+      transform: translateX(-50%);
     }
   }
 
@@ -64,16 +59,15 @@ const isOpenRegister = ref(false);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px;
+    padding: 10px 15px;
     width: 100%;
     max-width: 1440px;
     position: relative;
 
-    @include media-sm {
-      padding: 10px 15px;
+    @include media-lg {
+      padding: 24px;
     }
   }
-
 
   &__auth {
     display: flex;

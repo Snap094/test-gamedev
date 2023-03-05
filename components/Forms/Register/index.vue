@@ -7,50 +7,56 @@
       <h3 class="typography_form-title">Реєстрація</h3>
     </div>
     <div class="form__inner">
-      <input-component :class-name="'valid'" :input-type="'text'" :placeholder="'Ваше імʼя'"/>
-      <input-component :input-type="'email'" :placeholder="'Ваш email'"/>
-      <input-component :input-type="'password'" :placeholder="'Ваш пароль'"/>
-      <input-component :class-name="'error'" :message="'Паролі не співпадають'" :input-type="'password'"
-                       :placeholder="'Повторіть пароль'"/>
+      <UiInput :class-name="'valid'"
+               :input-type="'text'"
+               :placeholder="'Ваше імʼя'"
+      />
+      <UiInput :input-type="'email'"
+               :placeholder="'Ваш email'"
+      />
+      <UiInput :input-type="'password'"
+               :placeholder="'Ваш пароль'"
+      />
+      <UiInput :class-name="'error'"
+               :message="'Паролі не співпадають'"
+               :input-type="'password'"
+               :placeholder="'Повторіть пароль'"
+      />
       <div class="form__contact">
         <p class="form__contact-title typography_hairline-small typography_cl-gray-400 typography_text-center">
           Оберіть спосіб звязку
         </p>
         <div class="form__contact-row">
-          <ButtonComponent class="form__social form__social_telegram button_medium button_light button_icon-only">
+          <UiButton class="form__social form__social_telegram button_medium button_light button_icon-only">
             <template #icon>
               <img src="~/assets/images/telegram.svg" alt="telegram">
             </template>
-          </ButtonComponent>
-          <ButtonComponent class="form__social button_medium button_light button_icon-only">
+          </UiButton>
+          <UiButton class="form__social button_medium button_light button_icon-only">
             <template #icon>
               <img src="~/assets/images/skype.svg" alt="skype">
             </template>
-          </ButtonComponent>
-          <input-component :input-type="'text'" :placeholder="'@телеграм_адреса'"/>
+          </UiButton>
+          <UiInput :input-type="'text'"
+                   :placeholder="'@телеграм_адреса'"
+          />
         </div>
       </div>
-      <ButtonComponent class="form__button button_medium button_primary">
+      <UiButton class="form__button button_medium button_primary">
         Реєстрація
-      </ButtonComponent>
+      </UiButton>
     </div>
   </form>
 </template>
-
-<script setup>
-import ButtonComponent from "./ui-components/ButtonComponent";
-import InputComponent from "./ui-components/InputComponent";
-
-</script>
 
 <style lang="scss" scoped>
 .form {
   display: flex;
   flex-direction: column;
-  padding: 60px 45px 45px;
+  padding: 25px;
 
-  @include media-sm {
-    padding: 25px;
+  @include media-lg {
+    padding: 60px 45px 45px;
   }
 
   &__contact-row {
@@ -65,15 +71,15 @@ import InputComponent from "./ui-components/InputComponent";
 
   &__head {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: start;
     align-items: center;
     gap: 10px;
     margin-bottom: 25px;
 
-    @include media-sm {
-      flex-direction: row;
-      justify-content: start;
+    @include media-lg {
+      flex-direction: column;
+      justify-content: center;
     }
   }
 

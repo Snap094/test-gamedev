@@ -7,18 +7,18 @@
       <h3 class="typography_form-title">Вхід</h3>
     </div>
     <div class="form__inner">
-      <input-component :input-type="'email'" :placeholder="'Ваш email'"/>
-      <input-component :input-type="'password'" :placeholder="'Ваш пароль'"/>
-      <ButtonComponent class="form__button button_medium button_primary">Війти</ButtonComponent>
+      <UiInput :input-type="'email'"
+               :placeholder="'Ваш email'"
+      />
+      <UiInput :input-type="'password'"
+               :placeholder="'Ваш пароль'"
+      />
+      <UiButton class="form__button button_medium button_primary">
+        Війти
+      </UiButton>
     </div>
   </form>
 </template>
-
-<script setup>
-import ButtonComponent from "./ui-components/ButtonComponent";
-import InputComponent from "./ui-components/InputComponent";
-
-</script>
 
 <style lang="scss" scoped>
   .form {
