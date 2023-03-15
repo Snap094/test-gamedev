@@ -189,6 +189,14 @@ const props = defineProps({
       &::placeholder {
         color: $cl-gray-500;
       }
+
+      &:-webkit-autofill,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:active{
+        -webkit-text-fill-color: $cl-gray-300;
+        transition: background-color 5000s ease-in-out 0s;
+      }
     }
   }
 </style>
