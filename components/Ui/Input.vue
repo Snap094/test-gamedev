@@ -193,9 +193,9 @@ const props = defineProps({
       &:-webkit-autofill,
       &:-webkit-autofill:focus,
       &:-webkit-autofill:hover,
-      &:-webkit-autofill:active{
+      &:-webkit-autofill:active {
         -webkit-text-fill-color: $cl-gray-300;
-        transition: background-color 5000s ease-in-out 0s;
+        -webkit-box-shadow: 0 0 0 1000px $cl-gray-800 inset !important;
       }
     }
   }
