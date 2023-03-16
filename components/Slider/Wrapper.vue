@@ -30,14 +30,14 @@
     overflow: hidden;
 
     &:after {
-      content: url("~/assets/images/lines.png");
+      content: url("/lines.png");
       position: absolute;
       bottom: 0;
       left: 0;
     }
 
     &:before {
-      content: url("~/assets/images/graph2.png");
+      content: url("/graph2.png");
       position: absolute;
       top: 0;
       left: 0;

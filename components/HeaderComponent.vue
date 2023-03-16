@@ -2,7 +2,7 @@
   <header class="header">
     <div class="header__inner">
       <div class="header__logo">
-        <img class="header__logo-img" src="~/assets/images/logo.png" alt="logo">
+        <img class="header__logo-img" src="/logo.png" alt="logo">
       </div>
       <div class="header__auth">
         <UiButton @click="isOpenLogin = true" class="button_small button_dark">Вхід</UiButton>

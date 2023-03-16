@@ -114,7 +114,7 @@ const props = defineProps({
 
       &[type=password] {
         & ~ .custom-input__icon {
-          background-image: url("~/assets/images/eye.svg");
+          background-image: url("/eye.svg");
           opacity: 1;
           pointer-events: initial;
         }
@@ -124,7 +124,7 @@ const props = defineProps({
         border: 2px solid $cl-primary-green;
 
         & ~ .custom-input__icon {
-          background-image: url("~/assets/images/check.svg");
+          background-image: url("/check.svg");
           opacity: 1;
           pointer-events: initial;
 
@@ -159,7 +159,7 @@ const props = defineProps({
         }
 
         & ~ .custom-input__icon_clear {
-          background-image: url("~/assets/images/close.svg");
+          background-image: url("/close.svg");
           opacity: 1;
           pointer-events: initial;
 

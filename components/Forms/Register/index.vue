@@ -2,7 +2,7 @@
   <form class="form" @submit.prevent>
     <div class="form__head">
       <div class="form__img">
-        <img src="~/assets/images/user.svg" alt="user">
+        <img src="/user.svg" alt="user">
       </div>
       <h3 class="typography_form-title">Реєстрація</h3>
     </div>
@@ -29,12 +29,12 @@
         <div class="form__contact-row">
           <UiButton class="form__social form__social_telegram button_medium button_light button_icon-only">
             <template #icon>
-              <img src="~/assets/images/telegram.svg" alt="telegram">
+              <img src="/telegram.svg" alt="telegram">
             </template>
           </UiButton>
           <UiButton class="form__social button_medium button_light button_icon-only">
             <template #icon>
-              <img src="~/assets/images/skype.svg" alt="skype">
+              <img src="/skype.svg" alt="skype">
             </template>
           </UiButton>
           <UiInput :input-type="'text'"

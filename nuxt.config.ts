@@ -2,7 +2,6 @@
 
 
 export default defineNuxtConfig({
-    ssr: false,
     app: {
         baseURL: '/test-gamedev/'
     },

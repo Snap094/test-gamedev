@@ -2,7 +2,7 @@
   <form class="form" @submit.prevent>
     <div class="form__head">
       <div class="form__img">
-        <img src="~/assets/images/lock.svg" alt="lock">
+        <img src="/lock.svg" alt="lock">
       </div>
       <h3 class="typography_form-title">Вхід</h3>
     </div>
