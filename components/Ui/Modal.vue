@@ -29,9 +29,9 @@ const modal = ref(null);
 
 watch(() => props.open, (val) => {
   if (val) {
-    document.querySelector('html').style.overflow = 'hidden'
+    document.querySelector('body').style.overflow = 'hidden'
   } else {
-    document.querySelector('html').style.overflow = 'auto'
+    document.querySelector('body').style.overflow = 'auto'
   }
 })
 
