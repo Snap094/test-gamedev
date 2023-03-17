@@ -47,7 +47,7 @@ const closeModal = function ($event) {
 .popup {
   height: 100vh;
   overflow-y: auto;
-  padding: 70px 10px;
+  padding: 10px;
   top: 0;
   left: 0;
   background: rgba(53, 57, 69, 0.9);
