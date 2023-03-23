@@ -29,9 +29,9 @@ const modal = ref(null);
 
 watch(() => props.open, (val) => {
   if (val) {
-    document.querySelector('body').style.overflow = 'hidden'
+    document.querySelector('body').className = "open-modal"
   } else {
-    document.querySelector('body').style.overflow = 'auto'
+    document.querySelector('body').classList.remove("open-modal")
   }
 })
 
@@ -45,25 +45,28 @@ const closeModal = function ($event) {
 
 <style lang="scss" scoped>
 .popup {
-  height: 100vh;
+  height: calc(100vh - (100vh - 100%));
   overflow-y: auto;
   padding: 10px;
   top: 0;
   left: 0;
   background: rgba(53, 57, 69, 0.9);
-  width: 100vw;
+  width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   position: fixed;
   pointer-events: initial;
   z-index: 500;
 
+  @include media-lg {
+    align-items: center;
+  }
+
   &__inner {
     min-width: 355px;
     min-height: 284px;
     position: relative;
-    margin-top: auto;
     transition: 0.5s ease-in-out;
     background: $cl-gray-700;
     opacity: 0.95;
@@ -71,10 +74,6 @@ const closeModal = function ($event) {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-
-    @include media-lg {
-      margin-bottom: auto;
-    }
   }
 
   &__close {

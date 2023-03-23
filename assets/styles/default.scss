@@ -10,6 +10,12 @@
 
 body {
   background: $cl-gray-800;
+
+  &.open-modal {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+  }
 }
 
 .global-content {
